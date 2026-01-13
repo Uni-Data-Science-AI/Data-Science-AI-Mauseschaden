@@ -3,4 +3,5 @@ dataset/
 functions/__pycache__/
 notebooks/models/
 notebooks/__pycache__/
-
+seg_dataset_ndvi/
+test/yolo11m_best.pt
