@@ -1,0 +1,20 @@
+@startuml validationWorkflow
+
+start
+:Generate Template Reference;
+repeat 
+    :Image Review;
+    :Image Annotation;
+    
+    :Reviewed by Agricultural Partner;
+    if (Discrepancies?) then (no)
+    else (yes)
+        :Adjust Annotation;
+    endif
+repeatwhile (<b>Next Image?) is (yes)
+-> no;
+:Annotaed Dataset;
+:Export Segementation Masks;
+
+stop
+@enduml
