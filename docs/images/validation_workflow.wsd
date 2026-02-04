@@ -13,7 +13,7 @@ repeat
     endif
 repeatwhile (<b>Next Image?) is (yes)
 -> no;
-:Annotaed Dataset;
+:Annotated Dataset;
 :Export Segementation Masks;
 
 stop

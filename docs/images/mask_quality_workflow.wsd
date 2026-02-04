@@ -5,7 +5,7 @@ start
 repeat
     :Random Resampling with Replacement;
     :Calculate Mean Dice Value;
-    repeatwhile (<b>Repeat Resampling and Rstimation 10,000 Times) is ( )
+    repeatwhile (<b>Repeat Resampling and Estimation 10,000 Times) is ( )
     switch (Bootstrap Estimators)
     case ( )
         :Standard Error;
