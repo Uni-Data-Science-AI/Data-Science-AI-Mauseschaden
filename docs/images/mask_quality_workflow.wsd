@@ -1,0 +1,19 @@
+@startuml maskQualityWorkflow
+
+start
+:Original Matched Ground Truth Instances;
+repeat
+    :Random Resampling with Replacement;
+    :Calculate Mean Dice Value;
+    repeatwhile (<b>Repeat Resampling and Estimation 10,000 Times) is ( )
+    switch (Bootstrap Estimators)
+    case ( )
+        :Standard Error;
+    case ( )
+        :95% Confidence Intervals;
+    endswitch
+
+
+
+    stop
+    @enduml
